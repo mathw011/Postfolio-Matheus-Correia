@@ -1,0 +1,412 @@
+
+html,body{
+margin: 0px;
+padding: 0px;
+}
+
+body {
+    background-color: #ffd166;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 18px;
+    background-color: 0e131f;
+    height: 50px;
+
+    animation-name: menu-capa;
+    animation-duration: 3s;
+}
+
+
+
+.navigation ul {
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    height: 50px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: white;
+    display: block;
+}
+
+.navigation li.menu {
+    display: none;
+
+}
+
+.navigation li.menu:hover {
+    color:#EEE5E9;
+    cursor: pointer;
+    
+}
+
+.presentation {
+    color:white
+}
+
+.profile-title span {
+    display: block;
+
+}
+
+.profile h1 {
+    text-transform: uppercase;
+    color: black;
+   
+    
+}
+
+.profile div {
+    display:inline-block;
+    height: 650px;
+    
+
+}
+.profile-pic {
+    width: 40%;
+    text-align: center;
+    animation-name: profile-capa;
+    animation-duration: 3s;
+}
+
+.profile-pic img {
+    width: 350px;
+    border-radius: 350px;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.profile-title  {
+    vertical-align: top;
+    width: 59%;
+    animation-name: titulo-capa;
+    animation-duration: 6s;
+    
+}
+
+.profile-title h1 {
+    font-size: 58px;
+    margin-top: 320px;
+    font-weight: 400;
+    line-height: 58px;
+    margin-left: 200px;
+}
+
+.profile-title h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: -20px;
+    margin-left: 200px;
+   
+}
+
+
+.bradcrumb {
+    padding-left: 0;
+    list-style: none;
+    color: black;
+
+}
+
+.bradcrumb li {
+    display: inline-block;
+
+}
+
+.main {
+    padding: 80px 180px 80px 100px;
+    /* a ordem nessa caso é: top, right, bottom, left*/
+
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+
+.main a.way {
+    color: black;
+}
+
+
+.main h1 {
+color: black;
+font-weight: normal;
+
+}
+
+.main h2 {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: BOLD;
+    margin-top: 50px;
+}
+
+.main h3 {
+    font-size: 16px;
+    color: black;
+
+
+}
+
+.main p {
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.cv-pic {
+    width: 190px;
+    float: left;
+    margin-right: 100px;
+}
+
+.principal ul {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 0;
+   
+}
+
+.principal {
+    padding: 80px 180px 80px 100px 
+}
+
+
+
+.principal li {
+    display: inline-block
+}
+
+.social-img {
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.whats {
+    width: 30px;
+    margin-right: 10px;
+    
+}
+
+.miniatura {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 100px;
+    transition: 1s;
+}
+
+.blackbox:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.blackbox-text {
+    text-align: center;
+}
+
+.blackbox-text h1{
+    font-size: 18px;
+    color: #EEE5E9;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.blackbox-text h2 {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+
+.voltar {
+    margin-left: 100px;
+    color: black;
+    text-align: left;
+}
+
+
+.foto-trabalho {
+    width: 50%;
+    margin: 30px;
+    margin-top: 30px;
+    padding-left: 300px;
+}
+
+.foto-trabalho-baixo {
+    width: 100%;
+    margin: 30px;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+@keyframes profile-capa {
+    0% { opacity: 0; transform: translate(0px,50px)}
+    100% { opacity: 1; transform: translate(0px,0px)}
+}
+
+
+
+@keyframes menu-capa {
+    0% {opacity:0}
+    50% {opacity: 0}
+    100% {opacity: 1;}
+}
+@keyframes conteudo {
+    0% { opacity: 0; transform: translate(-20px,0px)}
+    100% { opacity: 1; transform: translate(0px,0px)}
+}
+
+
+@keyframes titulo-capa {
+    0% { opacity: 0; transform: translate(0px,-50px)}
+    100% { opacity: 1; transform: translate(0px,0px)}
+}
+
+
+@media (max-width: 1000px) {
+
+.navigation li {
+    display: none;
+}
+
+.navigation li.menu {
+    display: inline-block;
+    
+}
+.profile div {
+    display:block;
+    height: auto;
+    
+
+}
+
+.profile-pic {
+ width: 100%;
+ 
+}
+
+.profile-pic img {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 80%;
+    width: 250px;
+
+}
+
+.profile-title {
+    width: 80%;
+    text-align: center;
+    padding-left: 40px;
+
+}
+
+.profile-title h1 {
+    font-size: 40px;
+    margin-top: 30px;
+   margin-left: 60px;
+   margin-right: 50px;
+}
+
+
+.profile-title h2 {
+    margin-top: 30px;
+   margin-left: 60px;
+   margin-right: 50px;
+}
+.main {
+    padding: 10px 5% 5%;
+    /* a ordem nessa caso é: top, right, bottom, left*/
+}
+
+.main p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.main p {
+    text-align: left;
+    line-height: 30px;
+}
+
+.main li {
+    font-size: 14px;
+}
+
+.cv-pic {
+    max-width: 100%;
+    float: none;
+    margin-right: 0px;
+}
+
+
+.miniatura {
+    max-width: 100%;
+    /*
+    background-size: auto;
+    height: 100%;
+    */
+}
+
+.blackbox {
+    opacity: 0.6;
+}
+
+.menujs {
+    height: auto;
+}
+
+.menujs ul {
+    height: auto;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.menujs li {
+    display: block;
+    border-bottom: solid black 1px;
+    padding: 0;
+    width: 100%;
+
+}
+
+}
